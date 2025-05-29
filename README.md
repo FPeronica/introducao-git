@@ -89,7 +89,19 @@ $$
 ## 3. Diagrama de Classes
 
 ```mermaid
-
+classDiagram
+class Departamento {
+  - id : number
+  - descricao : string
+  - icone : string
+  - colaborador : []Colaborador
+  + findAll()
+  + findById(id : number)
+  + findByDescricao(descricao : string)
+  + create(departamento : Departamento)
+  + update(departamento : Departamento)
+  + delete(id : number)
+}
 class Colaborador {
   - id : number
   - nome : string
@@ -131,6 +143,7 @@ Departamento --> Colaborador
 ```
 
 ------
+
 
 ## 4. Diagrama Entidade-Relacionamento (DER)
 
