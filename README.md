@@ -89,29 +89,13 @@ $$
 ## 3. Diagrama de Classes
 
 ```mermaid
-classDiagram
-class Departamento {
-  - id : number
-  - descricao : string
-  - icone : string
-  - colaborador : []Colaborador
-  + findAll()
-  + findById(id : number)
-  + findByDescricao(descricao : string)
-  + create(departamento : Departamento)
-  + update(departamento : Departamento)
-  + delete(id : number)
-}
+
 class Colaborador {
   - id : number
   - nome : string
   - email : string
   - foto : string
   - cargo : string
-  - salario : number
-  - horasMensais: number
-  - dependentes : number
-  - departamento : Departamento
   + findAll()
   + findById(id : number)
   + findByNome(nome : string)
